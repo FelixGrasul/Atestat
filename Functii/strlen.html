@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="Scripts/Numarare.js">Da</script>
+<title>Strlen</title>
+<link rel="stylesheet" href="strlenStyle.css">
+</head>
+<body>
+<div class="Container">
+	<div id="Fundal">
+		<div id="TopImg">
+			<img src="../Images\TopImage.png">
+		</div>
+		<div class="Search">
+			  <a href="../index.html">Introducere</a>
+			  <a class="active" href="Functii.html">Funcții</a>
+			  <a href="Bibliografie.html">Bibliografie</a>
+		</div>
+		<div id="Funcții">
+			<p style="font-size: 50px; margin-top: 0px; text-align: center; text-decoration: underline; font-weight: bold; margin-top: 15px;">Strlen(S)</p>
+			<h1 style="text-align: center; text-decoration: underline;">Ce este și cum lucreză funcția strlen?</h1>
+			<h3 style="margin-left: 60px; text-indent: 1cm;">Funcția strlen(S) este una dintre funcțiile elementare de care ne folosim atunci când manipulăm șirurile de caractere, această funcție arătându-ne lungimea efectiva a șirurilor.</h3>
+			<h3 style="margin-left: 60px; text-indent: 1cm;">Funcția strlen(S) returnează o valoare de tip integer (int).</h3>
+			<h3 style="margin-left: 60px; text-indent: 1cm;">Funcția strlen(S) necesită un singur parametru de tip char, acest parametru reprezintă șirul al cărei lungimi vrem să o aflăm și o putem folosi astfel:</h3>
+			<textarea readonly name="text" cols="100" rows="5" style="margin-left: 100px; background-color: black; color: white;">
+char S[25]; // Aici ne declarăm șirul
+int n; // Aici ne declarăm variabila de tip integer, variabilă în care vom reține lungimea șirului S
+cin.get(S,25); // Aici citim șirul S în întregime
+n=strlen(S); // Aici memorăm în n valoarea returnată de "strlen(S)", adică lungimea șirului S
+cout<<n; // Aici afișăm lungimea șirului nostru S</textarea><br><br>
+			<h1 style="text-align: center; text-decoration: underline;">Animație demonstrativă</h1>
+			<button class="button" id="Strlen" style="margin-left: 380px;" onclick="Numarare()">start animație</button>
+			<div id="Animatie">
+    			<h3 style="font-size: 50px; margin-top: 0px; text-align: center; text-decoration: underline; font-weight: bold;">strlen(S)</h3><br>
+				<img src="ImagesSiruri\S=.png" style="width: 64px; float: left;">
+				<img src="ImagesSiruri\A-i0.png" style="width: 64px; position: relative; float: left;" id="A-i0">
+				<img src="ImagesSiruri\t-i1.png" style="width: 64px; position: relative; float: left;" id="t-i1">
+				<img src="ImagesSiruri\e-i2.png" style="width: 64px; position: relative; float: left;" id="e-i2">
+				<img src="ImagesSiruri\s-i3.png" style="width: 64px; position: relative; float: left;" id="s-i3">
+				<img src="ImagesSiruri\t-i4.png" style="width: 64px; position: relative; float: left;" id="t-i4">
+				<img src="ImagesSiruri\a-i5.png" style="width: 64px; position: relative; float: left;" id="a-i5">
+				<img src="ImagesSiruri\t-i6.png" style="width: 64px; position: relative; float: left;" id="t-i6"><br><br><br><br><br><br><br>
+				<img src="ImagesSiruri\strlen(S)=.png"style="width: 170px; float: left;">
+				<img src="ImagesSiruri\0.png" style="width: 64px;" id="0">
+			</div>
+			<button class="button" id="Listafuncții" style="margin-left: 380px; margin-top: 65px;" onclick="window.location.href='functii.html'">Listă funcții</button>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+
+<footer>
+
+</footer>
+</html>

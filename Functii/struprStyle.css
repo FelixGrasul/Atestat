@@ -1,0 +1,99 @@
+html, head, body {
+    padding: 0px;
+    margin: 0px;
+    width: 1920px;
+    height: 100%;
+}
+body {
+	overflow-x: hidden;
+	background-image: url("../Images/Background.png");
+}
+
+textarea {
+  resize: none;
+}
+
+
+
+.Container {
+  width: 1920px;
+  height: 115%;
+}
+
+#Animatie {
+  width: 85%;
+  height: 250px;
+  border: 3px solid black;
+  padding: 50px;
+  margin: 20px;
+}
+
+#Fundal {
+    margin-left: 25%;
+    width: 50%;
+    height: 110%;
+    background-color: white;
+}
+
+#TopImg {
+    width: 960px;
+    height: 175px;
+}
+
+#Funcții {
+    width: 960px;
+    height: 100%;
+}
+
+/*Search bar-ul*/
+
+.Search {
+  background-color: #344EF0;
+  overflow: hidden;
+  height: 30px;
+}
+
+.Search a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.Search a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.Search a.active {
+  background-color: #203DF3;
+  color: white;
+}
+
+/* Butoane */
+.button {
+  background-color: #CACBD3;
+  border: none;
+  color: black;
+  width: 172px;
+  height: 50px;
+  padding: 16px 32px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 4px 2px;
+
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.button:hover {opacity: 1}
+
+
+#plus1 {
+  opacity: 0.0;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="Scripts/strlwer.js">Da</script>
+<title>Strlwr</title>
+<link rel="stylesheet" href="strlwrStyle.css">
+</head>
+<body>
+<div class="Container">
+	<div id="Fundal">
+		<div id="TopImg">
+			<img src="../Images\TopImage.png">
+		</div>
+		<div class="Search">
+			  <a href="../index.html">Introducere</a>
+			  <a class="active" href="Functii.html">Funcții</a>
+			  <a href="Bibliografie.html">Bibliografie</a>
+		</div>
+		<div id="Funcții">
+			<p style="font-size: 50px; margin-top: 0px; text-align: center; text-decoration: underline; font-weight: bold; margin-top: 15px;">strlwr(S)</p>
+			<h1 style="text-align: center; text-decoration: underline;">Ce este și cum lucreză funcția strlwr?</h1>
+			<h3 style="margin-left: 60px; text-indent: 1cm;">Funcția strlwr(S) convertește toate literele șirului S în litere mici</h3>
+			<textarea readonly name="text" cols="100" rows="3" style="margin-left: 100px; background-color: black; color: white;">
+char S[25]ș // Aici ne declarăm șirul
+cin.get(S,25); // Aici citim șirul S în întregime
+strlwr(S); // Aici convertim toate literele șirului S în litere mici</textarea><br><br>
+			<h1 style="text-align: center; text-decoration: underline;">Animație demonstrativă</h1>
+			<button class="button" id="Strlen" style="margin-left: 380px;" onclick="Numarare()">start animație</button>
+			<div id="Animatie">
+    			<h3 style="font-size: 50px; margin-top: 0px; text-align: center; text-decoration: underline; font-weight: bold;">strlwr(S)</h3><br>
+				<img src="ImagesSiruri\S=.png" style="width: 64px; float: left;">
+				<img src="ImagesSiruri\A-i0.png" style="width: 64px; position: relative; float: left;" id="A-i0">
+				<img src="ImagesSiruri\z-T1.png" style="width: 64px; position: relative; float: left;" id="t-i1">
+				<img src="ImagesSiruri\z-E2.png" style="width: 64px; position: relative; float: left;" id="e-i2">
+				<img src="ImagesSiruri\z-S3.png" style="width: 64px; position: relative; float: left;" id="s-i3">
+				<img src="ImagesSiruri\z-T4.png" style="width: 64px; position: relative; float: left;" id="t-i4">
+				<img src="ImagesSiruri\z-A5.png" style="width: 64px; position: relative; float: left;" id="a-i5">
+				<img src="ImagesSiruri\z-T6.png" style="width: 64px; position: relative; float: left;" id="t-i6"><br><br><br><br><br><br><br>
+			</div>
+			<button class="button" id="Listafuncții" style="margin-left: 380px; margin-top: 65px;" onclick="window.location.href='functii.html'">Listă funcții</button>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+
+<footer>
+
+</footer>
+</html>

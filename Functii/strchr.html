@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="Scripts/Cautare.js">Da</script>
+<title>Strchr</title>
+<link rel="stylesheet" href="strchrStyle.css">
+</head>
+<body>
+<div class="Container">
+	<div id="Fundal">
+		<div id="TopImg">
+			<img src="../Images\TopImage.png">
+		</div>
+		<div class="Search">
+			  <a href="../index.html">Introducere</a>
+			  <a class="active" href="Functii.html">Funcții</a>
+			  <a href="Bibliografie.html">Bibliografie</a>
+		</div>
+		<div id="Funcții">
+			<p style="font-size: 50px; margin-top: 0px; text-align: center; text-decoration: underline; font-weight: bold; margin-top: 15px;">strchr(S,p)</p>
+			<h1 style="text-align: center; text-decoration: underline;">Ce este și cum lucreză funcția strchr?</h1>
+			<h3 style="margin-left: 60px; text-indent: 1cm;">Funcția strchr(S,p) verifică daca există caracterul p în șirul S, căutarea se face de la stânga la dreapta</h3>
+			<h3 style="margin-left: 60px; text-indent: 1cm;">Funcția strchr(S,p) returnează 0 în cazul în care caracterul p nu există in șirul S, iar în caz contrat returnează o valoare diferită de 0</h3>
+			<h3 style="margin-left: 60px; text-indent: 1cm;">Funcția strlen(S) necesită doi parametri de tip char, primul parametru reprezintă șirul pe care îl vom parcurge, iar cel de-al doilea parametru reprezintă caracterul căutat și o putem folosi astfel:</h3>
+			<textarea readonly name="text" cols="100" rows="9	" style="margin-left: 100px; background-color: black; color: white;">
+char S[25],p; // Aici ne declarăm șirul si caracterul
+cin.get(S,25); // Aici citim șirul S în întregime
+cin.get(); // Aici citim terminatorul primului șir
+cin>>p; // Aici citim caracterul pe care dorim să-l căutăm
+if(strchr(S,p)!=0) // Aici verificăm dacă caracterul p se afla în șirul S, daca se află, valoarea returnată va fi diferită de 0, în caz contrar, va fi 0.
+{
+	INSTRUCȚIUNI 
+}</textarea><br><br>
+			<h1 style="text-align: center; text-decoration: underline;">Animație demonstrativă</h1>
+			<button class="button" id="Strlen" style="margin-left: 380px;" onclick="Numarare()">start animație</button>
+			<div id="Animatie">
+    			<h3 style="font-size: 50px; margin-top: 0px; text-align: center; text-decoration: underline; font-weight: bold;">strchr(S,p)</h3><br>
+				<img src="ImagesSiruri\S=.png" style="width: 64px; float: left;">
+				<img src="ImagesSiruri\A-i0.png" style="width: 64px; position: relative; float: left;" id="A-i0">
+				<img src="ImagesSiruri\t-i1.png" style="width: 64px; position: relative; float: left;" id="t-i1">
+				<img src="ImagesSiruri\e-i2.png" style="width: 64px; position: relative; float: left;" id="e-i2">
+				<img src="ImagesSiruri\s-i3.png" style="width: 64px; position: relative; float: left;" id="s-i3">
+				<img src="ImagesSiruri\t-i4.png" style="width: 64px; position: relative; float: left;" id="t-i4">
+				<img src="ImagesSiruri\a-i5.png" style="width: 64px; position: relative; float: left;" id="a-i5">
+				<img src="ImagesSiruri\t-i6.png" style="width: 64px; position: relative; float: left;" id="t-i6"><br><br><br><br><br><br><br>
+				<img src="ImagesSiruri\p.png" style="width: 64px; float: left;">
+				<img src="ImagesSiruri\STRCHRS.png" style="width: 64px;" id="0"><br><br><br><br><br>
+				<img src="ImagesSiruri\strchr(S,p).png"style="width: 170px; float: left;">
+				<img src="ImagesSiruri\0.png" style="width: 64px;" id="01">
+			</div>
+			<button class="button" id="Listafuncții" style="margin-left: 380px; margin-top: 65px;" onclick="window.location.href='functii.html'">Listă funcții</button>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+
+<footer>
+
+</footer>
+</html>
